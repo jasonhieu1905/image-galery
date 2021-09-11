@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+    crossorigin="anonymous"
+  />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
+    <div class="container-xl" style="padding: 30px; display: flex; flex-direction: column; height: 100vh">
+      <div>
+        <button onclick="displaySider5()" type="button" class="btn btn-warning">Image Gallery</button>
+        <button onclick="displaySider6()" type="button" class="btn btn-info">Image Gallery 2</button>
+        <button onclick="displaySider3()" type="button" class="btn btn-success">Expand Images</button>
+        <button onclick="displaySider4()" type="button" class="btn btn-danger">Overlay Images</button>
+        <button onclick="displaySider1()" type="button" class="btn btn-primary">Slider1 Snippet</button>
+        <button onclick="displaySider2()" type="button" class="btn btn-secondary">Slider2 Snippet</button>
+      </div>
+      <div style="flex-grow: 1; margin-top: 30px">
+        <iframe height="100%" style="display: none"  width="100%" id="dragSlider4" src="image-overlay-slider/dist/index.html">
+        </iframe>
+        <iframe height="100%" style="display: none" width="100%" id="dragSlider" src="drag-slider/dist/index.html">
+        </iframe>
+        <iframe height="100%" style="display: none"  width="100%" id="dragSlider2" src="slider2/dist/index.html">
+        </iframe>
+        <iframe height="100%" style="display: none"  width="100%" id="dragSlider3" src="expanding-flex-cards/dist/index.html">
+        </iframe>
+        <iframe height="100%" style="display: none"  width="100%" id="dragSlider4" src="image-overlay-slider/dist/index.html">
+        </iframe>
+        <iframe height="100%" style="display: block"  width="100%" id="dragSlider5" src="responsive-css-grid-masonry-gallery/dist/index.html">
+        </iframe>
+        <iframe height="100%" style="display: none"  width="100%" id="dragSlider6" src="doggie-screensaver/dist/index.html">
+        </iframe>
+      </div>
+    </div>
+
+    
+    <script>
+      function displaySider1() {
+        $('#dragSlider').show();
+        $('#dragSlider2').hide();
+        $('#dragSlider3').hide();
+        $('#dragSlider4').hide();
+        $('#dragSlider5').hide();
+        $('#dragSlider6').hide();
+      }
+
+      function displaySider2() {
+        $('#dragSlider2').show();
+        $('#dragSlider').hide();
+        $('#dragSlider3').hide();
+        $('#dragSlider4').hide();
+        $('#dragSlider5').hide();
+        $('#dragSlider6').hide();
+
+      }
+
+      function displaySider3() {
+        $('#dragSlider3').show();
+        $('#dragSlider').hide();
+        $('#dragSlider2').hide();
+        $('#dragSlider4').hide();
+        $('#dragSlider5').hide();
+        $('#dragSlider6').hide();
+
+      }
+
+      function displaySider4() {
+        $('#dragSlider4').show();
+        $('#dragSlider').hide();
+        $('#dragSlider1').hide();
+        $('#dragSlider2').hide();
+        $('#dragSlider5').hide();
+        $('#dragSlider6').hide();
+
+      }
+
+      function displaySider5() {
+        $('#dragSlider5').show();
+        $('#dragSlider').hide();
+        $('#dragSlider2').hide();
+        $('#dragSlider3').hide();
+        $('#dragSlider4').hide();
+        $('#dragSlider6').hide();
+      }
+
+      function displaySider6() {
+        $('#dragSlider6').show();
+        $('#dragSlider').hide();
+        $('#dragSlider2').hide();
+        $('#dragSlider3').hide();
+        $('#dragSlider4').hide();
+        $('#dragSlider5').hide();
+      }
+    </script>
+  </body>
+</html>
